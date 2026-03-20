@@ -2,7 +2,7 @@
 
 const DEV_MODE = true;
 const STORAGE_KEY = 'bourso_users_data';
-const DATA_VERSION = 5;
+const DATA_VERSION = 2;
 
 class UserService {
   constructor() {
