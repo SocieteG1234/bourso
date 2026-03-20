@@ -2,7 +2,7 @@
 
 const DEV_MODE = true;
 const STORAGE_KEY = 'bourso_users_data';
-const DATA_VERSION = 1;
+const DATA_VERSION = 5;
 
 class UserService {
   constructor() {
@@ -59,7 +59,7 @@ class UserService {
         // ===== COMPTE =====
         accountNumber: '20250000001',
         manager: 'Sophie Martin',
-        balance: 5800.10,
+        balance: 67.10,
         isBlocked: false,
         canTransferWhenBlocked: false,
         unlockFee: null,
@@ -86,7 +86,7 @@ class UserService {
             cardNumber: '4567 8912 3456 7890',
             maskedNumber: '4567 **** **** 7890',
             cvv: '123',
-            expiryDate: '12/25',
+            expiryDate: '12/28',
             status: 'active',
             dailyWithdrawalLimit: 500,
             weeklyPaymentLimit: 2000,
@@ -98,23 +98,23 @@ class UserService {
 
         // ===== COMPTES =====
         accounts: [
-          { id: 1, type: 'Compte Courant', number: 'N°*******7890', balance: 300978000.10, icon: 'wallet' },
-          { id: 2, type: 'Livret A', number: 'N°*******5462', balance: 30000.40, icon: 'piggybank' },
-          { id: 3, type: 'Plan Épargne', number: 'N°*******8891', balance: 50000.17, icon: 'trending' }
+          { id: 1, type: 'Compte Courant', number: 'N°*******7890', balance: 67.10, icon: 'wallet' },
+          { id: 2, type: 'Livret A', number: 'N°*******5462', balance: 30.40, icon: 'piggybank' },
+          { id: 3, type: 'Plan Épargne', number: 'N°*******8891', balance: 50.17, icon: 'trending' }
         ],
 
         // ===== TRANSACTIONS =====
         transactions: [
-          { id: 1, type: 'Virement en attente', date: '20 Mar 2026', reference: 'Thomas Mercier', amount: 4000.00, isCredit: false, status: 'pending' },
-          { id: 2, type: 'Virement sortant', date: '19 Mar 2026', reference: 'Sophie Blanchard', amount: 7000.00, isCredit: false, status: 'done' },
-          { id: 3, type: 'Virement sortant', date: '18 Mar 2026', reference: 'Marie Fontaine', amount: 5000.00, isCredit: false, status: 'done' },
-          { id: 4, type: 'Virement sortant', date: '17 Mar 2026', reference: 'Lucas Petit', amount: 2000.00, isCredit: false, status: 'done' },
-          { id: 5, type: 'Achat carte', date: '16 Mar 2026', reference: 'CARREFOUR VICHY', amount: 85.50, isCredit: false, status: 'done' },
-          { id: 6, type: 'Achat carte', date: '15 Mar 2026', reference: 'UBER VICHY', amount: 45.20, isCredit: false, status: 'done' },
-          { id: 7, type: 'Retrait ATM', date: '14 Mar 2026', reference: 'ATM BOURSO VICHY', amount: 100.00, isCredit: false, status: 'done' },
-          { id: 8, type: 'Achat carte', date: '13 Mar 2026', reference: 'FNAC VICHY', amount: 156.80, isCredit: false, status: 'done' },
-          { id: 9, type: 'Achat carte', date: '12 Mar 2026', reference: 'AMAZON FRANCE', amount: 67.99, isCredit: false, status: 'done' },
-          { id: 10, type: 'Retrait ATM', date: '11 Mar 2026', reference: 'ATM BOURSO GARE', amount: 200.00, isCredit: false, status: 'done' }
+          { id: 1, type: 'Virement en attente', date: '19 Mar 2026', reference: 'Anna Maria Chancez Garcia', amount: 5800.00, isCredit: false, status: 'pending' },
+          { id: 2, type: 'Virement sortant', date: '09 Mar 2026', reference: 'Sophie Blanchard', amount: 7000.00, isCredit: false, status: 'done' },
+          { id: 3, type: 'Virement sortant', date: '08 Mar 2026', reference: 'Marie Fontaine', amount: 5000.00, isCredit: false, status: 'done' },
+          { id: 4, type: 'Virement sortant', date: '07 Mar 2026', reference: 'Lucas Petit', amount: 2000.00, isCredit: false, status: 'done' },
+          { id: 5, type: 'Achat carte', date: '16 Mar 2025', reference: 'CARREFOUR VICHY', amount: 85.50, isCredit: false, status: 'done' },
+          { id: 6, type: 'Achat carte', date: '15 Mar 2025', reference: 'UBER VICHY', amount: 45.20, isCredit: false, status: 'done' },
+          { id: 7, type: 'Retrait ATM', date: '14 Mar 2025', reference: 'ATM BOURSO VICHY', amount: 100.00, isCredit: false, status: 'done' },
+          { id: 8, type: 'Achat carte', date: '13 Mar 2025', reference: 'FNAC VICHY', amount: 156.80, isCredit: false, status: 'done' },
+          { id: 9, type: 'Achat carte', date: '12 Mar 2025', reference: 'AMAZON FRANCE', amount: 67.99, isCredit: false, status: 'done' },
+          { id: 10, type: 'Retrait ATM', date: '11 Mar 2025', reference: 'ATM BOURSO GARE', amount: 200.00, isCredit: false, status: 'done' }
         ],
 
         expenses: {
